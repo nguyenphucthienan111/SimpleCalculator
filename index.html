@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <div class="history"></div>
+        <div class="current">0</div>
+      </div>
+      <button class="history-btn">
+        <i class="fas fa-history"></i>
+        Calculate History
+      </button>
+      <div class="buttons">
+        <button class="clear">C</button>
+        <button class="operator">/</button>
+        <button class="operator">*</button>
+        <button class="delete">⌫</button>
+
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operator">-</button>
+
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operator">+</button>
+
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="equals">=</button>
+
+        <button class="number zero">0</button>
+        <button class="decimal">.</button>
+      </div>
+    </div>
+    <div class="history-modal" id="historyModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2><i class="fas fa-history"></i> Calculate History</h2>
+          <span class="close-modal">&times;</span>
+        </div>
+        <div class="history-list"></div>
+        <button class="clear-history">Clear History</button>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
